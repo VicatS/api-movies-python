@@ -39,3 +39,6 @@ wheels/
 # Database
 *.sqlite3
 *.db
+
+# Ignorar todo el contenido de la carpeta migrations
+migrations/*
