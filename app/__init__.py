@@ -20,6 +20,15 @@ def create_app():
     
     swagger = Swagger(app)
     
+    # Import and run the seed script
+    from app.seeds import seed_data
+
+    @app.before_request
+    def initialize_database():
+        if not hasattr(app, 'seeded'):
+            seed_data()
+            app.seeded = True
+    
     app.config['SWAGGER'] = {
         'title': 'Movie API',
         'uiversion': 3
