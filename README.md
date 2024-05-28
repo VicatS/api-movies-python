@@ -118,6 +118,12 @@ Parámetros del Formulario
 3.  Escoger el archivo `movie_catalog_api_collection.json`.
 4.  Dar `Importar`
 
+## Configuracion adicionales
+
+![Configuracion CORS frontend](./app/static/cors-api.png)
+
+- Verificar la url del frontend `http://localhost:4200/`
+
 ## Estructura del Proyecto
 
 ```plaintext
