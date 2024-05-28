@@ -41,4 +41,4 @@ wheels/
 *.db
 
 # Ignorar todo el contenido de la carpeta migrations
-migrations/*
+!migrations/.keep
