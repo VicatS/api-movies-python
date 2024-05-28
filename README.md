@@ -15,17 +15,21 @@ Esta es una API de catálogo de películas desarrollada con Flask y SQLAlchemy. 
    ```bash
    git clone https://github.com/VicatS/api-movies-python.git
    cd api-movies-python
+
 2. Crea un entorno virtual e instálalo:
 
-    ``bash
+    ```bash
     python3 -m venv venv
     source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
+
 3.  Instala las dependencias:
 
-    ``bash
+    ```bash
     pip install -r requirements.txt
+
 4. Configura las variables de entorno. Crea un archivo .env en la raíz del proyecto y añade tus configuraciones:
 
+    ```bash
     FLASK_APP=run.py
     FLASK_ENV=development
     DATABASE_URL=mysql+pymysql://username:password@localhost/dbname
@@ -74,7 +78,7 @@ Esta es una API de catálogo de películas desarrollada con Flask y SQLAlchemy. 
     ```http
     POST /api/v1/movies
 
-    Parámetros del Formulario
+Parámetros del Formulario
 - `name` (string): Nombre de la película (requerido)
 - `cover_image` (file): Imagen de la portada de la película (requerido)
 - `classification` (string): Clasificación de la película (requerido)
@@ -87,7 +91,7 @@ Esta es una API de catálogo de películas desarrollada con Flask y SQLAlchemy. 
     ```http
     PUT /api/v1/movies/{id}
 
-    Parámetros del Formulario
+Parámetros del Formulario
 - `name` (string): Nombre de la película
 - `cover_image` (file): Imagen de la portada de la película
 - `classification` (string): Clasificación de la película
